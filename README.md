@@ -1,7 +1,7 @@
-### Build
+## Build
 
 #### `./gradlew assembleRelease`
 
-### Push
+## Push
 
 #### `adb push app-release.apk /storage/self/primary/Download/`
