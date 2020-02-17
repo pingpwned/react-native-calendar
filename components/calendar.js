@@ -94,8 +94,8 @@ export default class Calendar extends React.Component {
         // Current month's days
         for (var i = 1; i <= this.state.howManyDaysInMonth; i++) {
             arr.push(
-                <View key={i+6} style={ this.state.todayActive && this.props.today.getDate() === i ? styles.today : {  width: 55, height: 55, alignItems: 'center', justifyContent: 'center' } } >
-                    <Text style={ this.state.todayActive && this.props.today.getDate() === i ? styles.todayText : {}}>{i}</Text>
+                <View key={i+6} style={ this.state.todayActive && this.state.realToday.getDate() === i ? styles.today : {  width: 55, height: 55, alignItems: 'center', justifyContent: 'center' } } >
+                    <Text style={ this.state.todayActive && this.state.realToday.getDate() === i ? styles.todayText : {}}>{i}</Text>
                 </View>
             )
         }
